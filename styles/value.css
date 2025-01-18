@@ -1,0 +1,12 @@
+:root{
+    --bg-primary: #f05053;
+    --bg-secondary: #e1eec3;
+
+    --font-primary: #292525;
+    --font-secondary: #fffee0;
+}
+
+@font-face {
+    font-family: "Quebecks";
+    src: url("/../fonts/Quebecks.ttf");
+}
