@@ -26,7 +26,7 @@ async function fetchData() {
     
 function showText() {
     if(content_data === null) {
-        console.log("dat anot found. Returning...");
+        console.log("data not found. Returning...");
         return;
     }
 
@@ -43,11 +43,12 @@ function showText() {
 
 function typeText(content, container, time, callback) {
     let index = 0;
-    container.innerHTML = '';
+    let tempHTML = '';
     
     function type() {
-        if (index < content.length-1) {
-            container.innerHTML += content[index];
+        if (index < content.length) {
+            tempHTML += content[index];
+            container.innerHTML = tempHTML;
             index++;
             setTimeout(type, time);
         } else if(callback) {
