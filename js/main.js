@@ -32,13 +32,15 @@ function showText() {
 
     setButton(false);
     typeText(content_data[current_index], content, 24, ()=>{
-        setButton(true);
+        if(current_index < content_data.length-1) {
+            current_index ++;
+            console.log(current_index);
+            
+            if(current_index < content_data.length) {
+                setButton(true);
+            }
+        }
     });
-    
-    if(current_index < content_data.length-1) {
-        current_index ++;
-        console.log(current_index);
-    }
 }
 
 function typeText(content, container, time, callback) {

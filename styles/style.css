@@ -5,7 +5,7 @@
     padding: 0;
 
     font-family: "Teacher";
-    color: var(--font-secondary);
+    color: var(--font-primary);
 }
 
 .hidden {
@@ -13,44 +13,58 @@
 }
 
 .container {
-    height: 100vh;
-    width: 100vw;
-
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    background: linear-gradient(to bottom right, var(--bg-primary), var(--bg-secondary));
+    height: 100vh;
+    width: 100vw;
 
     font-size: 2em;
-
     overflow: hidden;
 }
 
-.content-container {
-    position: relative;
-
-    height: 60vh;
-    width: 60vw;
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("./../images/Background.png");
+    z-index: -1;
 }
 
-#content {
-    min-height: 80%;
+.page {
+    margin-top: 100px;
 
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* text-align: center; */
+    width: 850px;
+    height: 800px;
+
+    background-image: url("./../images/Page.png");
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: contain;
+}
+
+.page-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    margin: 100px 70px;
+    padding-top: 20px;
+    width: 78%;
+    height: 70%;
+}
+
+.page-content {
+    min-height: 80%;
 
     text-wrap: wrap;
 }
 
 .continue-btn {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    
-    height: 120px;
+    height: 70px;
     width: 200px;
 
     font-family: "Quebecks";
@@ -58,8 +72,21 @@
 
     background: transparent;
     border: none;
+    cursor: pointer;
 }
 
-.continue-btn:hover {
-    cursor: pointer;
+/* ========================
+        Decoration
+======================== */
+
+.string-heart {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.guy-with-cake {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
 }
