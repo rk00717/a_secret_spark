@@ -6,6 +6,8 @@
 
     font-family: "Teacher";
     color: var(--font-primary);
+
+    user-select: none;
 }
 
 .hidden {
