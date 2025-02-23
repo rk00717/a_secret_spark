@@ -32,12 +32,7 @@ function showText() {
 
     setButton(false);
     var data = content_data[current_index];
-
-    if(data.image == undefined || data.image === "") {
-        subjectImg.innerHTML = ""
-    }else {
-        subjectImg.innerHTML = `<img class="fade-in" src="${data.image}" />`
-    }
+    subjectImg.innerHTML = ""
 
     typeText(data.message, content, 24, ()=>{
         if(current_index < content_data.length-1) {
@@ -47,6 +42,10 @@ function showText() {
             if(current_index < content_data.length) {
                 setButton(true);
             }
+        }
+
+        if(!(data.image == undefined || data.image === "")) {
+            subjectImg.innerHTML = `<img class="fade-in" src="${data.image}" />`
         }
     });
 }
