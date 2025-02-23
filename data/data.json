@@ -1,9 +1,30 @@
 [
-    "Dear Mayurii - Mau, ",
-    "I'm wishing you a very <i>Happy Birthday!</i> <br />I hope this year brings you everything you’ve been wishing for. Take care and enjoy your special day.",
-    "It’s hard to put into words what I’m feeling right now as we meet again after so long 09-10-2019 - 23-02-2025. Five years is a long time, yet somehow, it feels like just yesterday we were together 08-04-2018❣(Sharp 12:00 o'clock, when you expressed your feelings for me,That day was unforgettable for me),sharing laughter, dreams, and moments that still hold a special place in my heart.",
-    "Life may have taken us on different paths, but I hope you know you’ve never been far from my thoughts. Every memory we created has been a part of me, shaping who I am today.",
-    "I don’t know what the future holds for either of us, but I’m grateful for the chance to see you again, to reconnect, and to cherish this moment. No matter what, I’ll always value the role you’ve played in my life.",
-    "Here's to the past, the present and whatever lies ahead.",
-    "- I see us, years from now, still holding hands and smiling like we did the first day we met..."
+    {
+        "message": "Dear Mayurii - Mau, ",
+        "image": "./images/subject/0.jpg"
+    },
+    {
+        "message": "I'm wishing you a very <i>Happy Birthday!</i> <br />I hope this year brings you everything you’ve been wishing for. Take care and enjoy your special day.",
+        "image": "./images/subject/1.jpg"
+    },
+    {
+        "message": "It’s hard to put into words what I’m feeling right now as we meet again after so long 09-10-2019 - 23-02-2025. Five years is a long time, yet somehow, it feels like just yesterday we were together 08-04-2018❣(Sharp 12:00 o'clock, when you expressed your feelings for me,That day was unforgettable for me),sharing laughter, dreams, and moments that still hold a special place in my heart.",
+        "image": "./images/subject/2.jpg"
+    },
+    {
+        "message": "Life may have taken us on different paths, but I hope you know you’ve never been far from my thoughts. Every memory we created has been a part of me, shaping who I am today.",
+        "image": "./images/subject/3.jpg"
+    },
+    {
+        "message": "I don’t know what the future holds for either of us, but I’m grateful for the chance to see you again, to reconnect, and to cherish this moment. No matter what, I’ll always value the role you’ve played in my life.",
+        "image": ""
+    },
+    {
+        "message": "Here's to the past, the present and whatever lies ahead.",
+        "image": ""
+    },
+    {
+        "message": "- I see us, years from now, still holding hands and smiling like we did the first day we met...",
+        "image": ""
+    }
 ]

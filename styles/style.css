@@ -77,6 +77,27 @@
     cursor: pointer;
 }
 
+.image-container {
+    position: absolute;
+    bottom: 90px;
+    right: 10px;
+
+    width: 250px;
+
+    transform: rotate(-15deg);
+    opacity: .5;
+}
+
+.image-container > img {
+    width: inherit;
+    border-radius: 20px;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 10s;
+}   
+
 /* ========================
         Decoration
 ======================== */

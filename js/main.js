@@ -31,10 +31,18 @@ function showText() {
     }
 
     setButton(false);
-    typeText(content_data[current_index], content, 24, ()=>{
+    var data = content_data[current_index];
+
+    if(data.image == undefined || data.image === "") {
+        subjectImg.innerHTML = ""
+    }else {
+        subjectImg.innerHTML = `<img class="fade-in" src="${data.image}" />`
+    }
+
+    typeText(data.message, content, 24, ()=>{
         if(current_index < content_data.length-1) {
-            current_index ++;
-            console.log(current_index);
+            current_index ++
+            console.log(current_index)
             
             if(current_index < content_data.length) {
                 setButton(true);
