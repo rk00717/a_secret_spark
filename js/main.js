@@ -34,7 +34,7 @@ function showText() {
     var data = content_data[current_index];
     subjectImg.innerHTML = ""
 
-    typeText(data.message, content, 24, ()=>{
+    typeText(data.message, content, 24, () => {
         if(current_index < content_data.length-1) {
             current_index ++
             console.log(current_index)
